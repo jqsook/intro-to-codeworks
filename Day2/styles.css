@@ -1,0 +1,90 @@
+body {
+  background-color: white;
+  margin: 0;
+}
+header {
+  height: 80px;
+  background-color: rgb(29, 95, 170);
+  width: 100%;
+}
+footer {
+  height: 80px;
+  background-color: rgb(29, 95, 170);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.top-script {
+  color: white;
+  position: fixed;
+  top: 25px;
+  align-self: center;
+  right: 450px;
+  font-size: xx-large;
+}
+.med-blue-bar {
+  position: fixed;
+  top: 6rem;
+  right: 28rem;
+  width: 22rem;
+  background-color: rgb(68, 140, 247);
+  color: rgb(68, 140, 247);
+}
+.title {
+  position: fixed;
+  right: 27rem;
+  font-size: xx-large;
+  top: 8rem;
+}
+.paragraph {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 35%;
+  margin-top: 6rem;
+}
+.center {
+  display: flex;
+  justify-content: center;
+}
+.right-side-content {
+  justify-content: left;
+  width: 8rem;
+  margin-top: 10rem;
+  font-size: x-small;
+  position: fixed;
+  right: 5rem;
+}
+.article {
+  font-size: medium;
+}
+.image-box {
+  position: fixed;
+  width: 8rem;
+  height: 5rem;
+  margin-top: -5rem;
+  right: 5rem;
+  background-color: rgb(68, 140, 247);
+  color: white;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: medium;
+}
+
+/*This was taken from the Moody Kittens*/
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.d-flex.space-between {
+  justify-content: space-between;
+}
+.d-flex.space-around {
+  justify-content: space-around;
+}
+.d-flex.justify-content-center {
+  justify-content: center;
+}
