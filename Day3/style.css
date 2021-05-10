@@ -1,3 +1,52 @@
+/* * {
+  outline: 1px solid red;
+} */
 body {
-  background-color: rgba(32, 30, 30, 0.192);
+  background-color: #222;
+  margin: auto;
+  padding: auto;
+  height: 100vh;
+}
+.pole {
+  background-color: #f1f1f1;
+  border: 0.15rem solid #333;
+  height: 25vh; /* vh is visual- kind of like %*/
+  width: 10vw;
+  margin: auto;
+}
+.light-box {
+  background-color: #f1f1f1;
+  border: 0.15rem solid #333;
+  height: 66vh; /* vh is visual- kind of like %*/
+  width: 22vw;
+  margin: auto;
+  padding-top: 2vh;
+}
+.light {
+  height: 20vh;
+  width: 20vw;
+  border-radius: 50%;
+  margin: auto;
+  margin: auto auto 2vh auto;
+}
+.red {
+  background-color: #e20c0c;
+}
+.yellow {
+  background-color: #f3ef08;
+}
+.green {
+  background-color: #00fa00;
+}
+.green:hover {
+  box-shadow: 0 0 10px 60px #00fa004d;
+  /* This is how to blur and spread - need to find out the pattern meaning what does the 4 individuals */
+}
+.yellow:hover {
+  box-shadow: 0 0 10px 60px #f3ef08;
+  /* This is how to blur and spread - need to find out the pattern meaning what does the 4 individuals */
+}
+.red:hover {
+  box-shadow: 0 0 10px 60px #e20c0c;
+  /* This is how to blur and spread - need to find out the pattern meaning what does the 4 individuals */
 }

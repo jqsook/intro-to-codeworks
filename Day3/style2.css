@@ -1,0 +1,44 @@
+:root {
+  --theme: #19686d;
+  --theme-gray: #f3f3f3;
+}
+.bg-theme {
+  background-color: var(--theme);
+}
+.bg-theme-gray {
+  background-color: var(--theme-gray);
+}
+/* Changes the scroll behavoir for all the elements to a smooth operation */
+* {
+  scroll-behavior: smooth;
+}
+.hero {
+  height: 100vh;
+  /* background-image: (image url); */
+  background-size: cover;
+  /* scales up the image to fill the background image to fit in the box.  contain will always scale down */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; /* this moved all the parts right into the correct spots-- the last piece of the puzzle*/
+}
+
+.cta-box {
+  transform: translateY(50%) scaleY(1);
+  padding-bottom: 50px;
+  position: inherit;
+  /* postion: absolute;
+     bottom: 0; */
+}
+/* This above is very important. Scale runs from .1 and up- it makes large changes. 
+relative when talking about positions is relative to the container. Position fixed fixes an item on that spot in that spot no matter what. so set position with % and rem so that it is actually mobile and adjusts.*/
+/* The media tag is specifically for screen sizes. You can also reduce motion in this tag. Also can access the light and dark themes from the users divice*/
+@media screen and (max-width: 992px) {
+  cta-box {
+    position: relative;
+  }
+}
+/* These are to adjust pictures into a specified dimension.  makes them look alot better.  The other object fit is contain. try them out and see what works the best. Can use the scope to prevent someone to override the sizing so you could put the css directly in the html. */
+.fix-picture {
+  object-fit: cover;
+  object-position: right;
+}
