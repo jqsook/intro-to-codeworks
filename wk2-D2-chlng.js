@@ -15,6 +15,7 @@ if (coffeCup.full) {
     return console.log("The " + coffeCup.color + " " + coffeCup.name + " is " + coffeCup.ounces + " oz. ")
 } else {
     return console.log("The " + coffeCup.color + " " + coffeCup.name + " is " + coffeCup.ounces + " oz but not full.")
-    
+
 }
 
+// Add a function to take an imput from the user to see if the cup is full and hot.
